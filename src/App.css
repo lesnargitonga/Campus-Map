@@ -1,0 +1,147 @@
+.app-shell { display:flex; flex-direction:column; height:100vh; width:100%; max-width:100%; overflow-x:hidden; font-family: system-ui, "Segoe UI", Roboto, sans-serif; }
+.app-header { background:#004a99; color:#fff; padding:0.65rem 1rem; display:flex; align-items:center; gap:.75rem; box-shadow:0 2px 4px rgba(0,0,0,.25); z-index:2; }
+.brand { font-size:1.05rem; font-weight:600; letter-spacing:.5px; }
+.tagline { font-size:12px; opacity:.8; margin-left:.5rem; }
+.map-region { flex:1; position:relative; min-width:0; overflow:hidden; }
+.map-container { position:absolute; inset:0; background:#e8f0fe; }
+.status-banner { position:absolute; top:12px; left:50%; transform:translateX(-50%); background:#b00020; color:#fff; padding:10px 14px; font-size:13px; border-radius:6px; max-width:560px; line-height:1.35; box-shadow:0 4px 12px rgba(0,0,0,.35); backdrop-filter:blur(4px); }
+.status-banner.fallback { background:#045d27; }
+.toolbar { position:absolute; right:12px; top:66px; display:flex; flex-direction:column; gap:8px; z-index:3; max-width:calc(100% - 24px); }
+.btn { background:#ffffff; border:1px solid #ccc; border-radius:6px; padding:8px 12px; font-size:13px; cursor:pointer; font-weight:500; transition:background .2s, box-shadow .2s; }
+.btn { white-space:normal; word-break:break-word; }
+.btn:hover { background:#f3f7ff; box-shadow:0 1px 3px rgba(0,0,0,.25); }
+.btn.danger { background:#ff3d3d; color:#fff; border-color:#d52c2c; }
+.btn.danger:hover { background:#ff2727; }
+.btn.active { background:#2d7ef7; color:#fff; border-color:#2d7ef7; }
+.btn.active:hover { background:#1d65c7; }
+/* Route panel */
+.route-panel { position:absolute; right:12px; top:170px; width:220px; background:#ffffff; border:1px solid #cfd6e0; border-radius:10px; padding:10px 12px 12px; font-size:12px; z-index:4; box-shadow:0 4px 16px -4px rgba(0,0,0,.18); display:flex; flex-direction:column; gap:6px; }
+.rp-row { line-height:1.25; }
+.rp-row.small { font-size:11px; opacity:.7; margin-top:-4px; }
+.rp-label { font-weight:600; margin-right:4px; }
+.rp-actions { display:flex; gap:8px; margin-top:4px; }
+/* User location - Enhanced direction-aware marker */
+.user-marker {
+  width: 20px;
+  height: 20px;
+  background: #4285F4;
+  border-radius: 50%;
+  border: 2px solid white;
+  transform: rotate(var(--heading, 0));
+  position: relative;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.9), 0 0 10px 2px rgba(66,133,244,0.6);
+}
+
+/* POI markers (small blue dots) */
+.poi-marker {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #2d7ef7;
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: pointer;
+  transition: transform .15s, background .2s;
+}
+
+.poi-marker:hover { transform: scale(1.3); background:#1b64c4; }
+
+.user-marker::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #4285F4;
+}
+
+/* Fallback for old loc-dot class */
+.loc-dot { width:18px; height:18px; border-radius:50%; background:radial-gradient(circle at 35% 35%, #4fc3ff, #0077ff); box-shadow:0 0 0 3px rgba(255,255,255,0.9), 0 0 10px 2px rgba(0,136,255,0.6); position:relative; }
+.loc-dot:after { content:''; position:absolute; inset:0; border-radius:50%; animation:pulse 2.4s infinite; border:2px solid #1d7fff55; }
+@keyframes pulse { 0% { transform:scale(0.6); opacity:0.9; } 70% { transform:scale(1.6); opacity:0; } 100% { transform:scale(1.6); opacity:0; } }
+.loc-accuracy-pill { position:absolute; right:12px; top:140px; background:#ffffff; border:1px solid #c3ced9; font-size:11px; padding:4px 8px; border-radius:20px; box-shadow:0 2px 6px -2px rgba(0,0,0,.15); z-index:4; letter-spacing:.4px; }
+.off-campus-banner { position:absolute; left:50%; transform:translateX(-50%); top:12px; background:#14233b; color:#fff; padding:8px 14px; font-size:12px; border-radius:30px; box-shadow:0 4px 12px -4px rgba(0,0,0,.35); display:flex; align-items:center; gap:8px; z-index:5; }
+.off-campus-banner .link-btn { background:transparent; border:none; color:#4cc0ff; text-decoration:underline; cursor:pointer; font-size:12px; padding:0; }
+.off-campus-banner .link-btn:hover { color:#82d9ff; }
+/* POI Search UI */
+.poi-search-panel { position:absolute; left:12px; top:72px; width:280px; background:#fff; border:1px solid #d0d7e2; border-radius:10px; box-shadow:0 4px 18px -4px rgba(0,0,0,.18); padding:10px 12px 12px; font-size:13px; z-index:4; display:flex; flex-direction:column; max-height:70vh; backdrop-filter:blur(4px); }
+.search-row { display:flex; align-items:center; gap:6px; }
+.search-input { flex:1; padding:6px 8px; border:1px solid #b7c4d6; border-radius:6px; font-size:13px; }
+.search-input:focus { outline:2px solid #2d7ef7; outline-offset:1px; }
+.clear-btn { background:#eee; border:1px solid #bbb; border-radius:6px; padding:4px 8px; cursor:pointer; font-size:14px; line-height:1; }
+.clear-btn:hover { background:#e2e2e2; }
+.category-chips { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0 6px; }
+.chip { background:#f1f5f9; border:1px solid #d3dee9; padding:4px 10px; border-radius:20px; font-size:12px; cursor:pointer; line-height:1.2; display:inline-flex; align-items:center; gap:6px; }
+.chip-dot { width:10px; height:10px; border-radius:50%; display:inline-block; box-shadow:0 0 0 2px #ffffff; }
+.chip.active, .chip:hover { background:#2d7ef7; border-color:#2d7ef7; color:#fff; }
+.results-list { list-style:none; margin:0; padding:0; overflow-y:auto; border:1px solid #e3e8ef; border-radius:8px; max-height:260px; }
+.result-item { padding:6px 10px; display:flex; justify-content:space-between; gap:6px; cursor:pointer; border-bottom:1px solid #eef1f5; }
+.result-item:last-child { border-bottom:none; }
+.result-item.focus { background:#eef5ff; }
+.result-item.selected { background:#d6ebff; }
+.r-name { font-weight:500; }
+.r-cat { font-size:11px; opacity:.65; text-transform:capitalize; }
+.empty { padding:10px; text-align:center; color:#7a8896; }
+/* Info card */
+.poi-card { position:absolute; bottom:16px; left:16px; width:300px; background:#fff; border:1px solid #d0d7e2; border-radius:12px; box-shadow:0 6px 22px -6px rgba(0,0,0,.25); padding:14px 16px; font-size:13px; z-index:4; }
+.poi-card h3 { margin:0 0 4px; font-size:15px; }
+.poi-card .meta { font-size:11px; letter-spacing:.3px; text-transform:uppercase; color:#2d7ef7; font-weight:600; }
+.poi-card .desc { margin-top:6px; font-size:12px; line-height:1.35; color:#333; }
+.close-x { position:absolute; top:6px; right:8px; background:transparent; border:none; font-size:16px; cursor:pointer; line-height:1; color:#555; }
+.close-x:hover { color:#000; }
+
+/* Debug Panel */
+.debug-panel {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: #fff;
+  border: 1px solid #ccd3db;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  width: 220px;
+  box-shadow: 0 4px 14px -4px rgba(0,0,0,.2);
+  z-index: 6;
+}
+
+/* Screenshot/Clean UI mode */
+.screenshot-mode .app-header,
+.screenshot-mode .toolbar,
+.screenshot-mode .poi-search-panel,
+.screenshot-mode .route-panel,
+.screenshot-mode .legend-panel,
+.screenshot-mode .poi-card,
+.screenshot-mode .status-banner,
+.screenshot-mode .loc-accuracy-pill,
+.screenshot-mode .off-campus-banner { display:none !important; }
+
+.debug-panel h4 {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.debug-panel p {
+  margin: 4px 0;
+  font-size: 11px;
+}
+
+.debug-panel .btn {
+  margin-top: 8px;
+  font-size: 11px;
+  padding: 6px 10px;
+}
+
+/* Legend */
+.legend-panel { position:absolute; left:12px; bottom:16px; width:220px; background:#ffffff; border:1px solid #cfd6e0; border-radius:10px; padding:10px 12px; font-size:12px; z-index:4; box-shadow:0 4px 16px -4px rgba(0,0,0,.18); }
+.legend-title { font-weight:600; margin-bottom:6px; }
+.legend-items { display:flex; flex-wrap:wrap; gap:6px 10px; }
+.legend-item { display:flex; align-items:center; gap:6px; min-width: 44%; }
+.legend-dot { width:10px; height:10px; border-radius:50%; box-shadow:0 0 0 2px #fff; }
+.legend-label { font-size:12px; }

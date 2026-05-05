@@ -1,0 +1,431 @@
+{
+  "cover": "SCHOOL OF INFORMATION AND SYSTEM TECHNOLOGY.\r\nSTUDENT'S PROJECT LOG-BOOK  \r\nAPT/SWE__________________  \r\nFILL: Enter course code (e.g., SWE ### or APT ###).\r\n\r\nSTUDENT NAME:  \r\nFILL: <Surname, First Middle>\r\n\r\nDURATION: 12 WEEKS  \r\nFILL: Start: 05 Aug 2025  End: 27 Oct 2025 (adjust to official academic calendar).\r\n\r\nDAILY REPORT  \r\nThe daily work carried out during the period of PROJECT is to be recorded clearly with sketches and diagrams where applicable on the logbook. This must be HANDWRITTEN NOT WEEKLY.  \r\nFILL: Use the daily tables below; replicate sample Week 1 entries. Continue handwritten for authenticity.\r\n\r\nWEEKLY SUMMARY REPORT  \r\nTake weekly photo or scan and upload on BB logbook section. For the previous weeks use your proposal and design process items to update your weekly items.  \r\nFILL: Provide one paragraph summary per week (see samples under each week).\r\n\r\nREPORT WRITING  \r\nIn addition to the daily and weekly record, the student should submit a report of the work done during the Project. e.g full coverage of the project course, problems encountered etc. A comprehensive guide on report writing is provided by the supervisor on blackboard.  \r\nFILL: Planned sections: Abstract; Introduction; Problem; Objectives; Design & UML; Implementation; Testing; Results; Challenges; Future Work; Conclusion.\r\n\r\nN/B: Note those who don’t submit on Blackboard on time OR wrong uploads are graded 0, late submission 5/10 even after presenting. Ensure you submit on Blackboard and daily manually update log book report. Ensure you are attending all classes and complying with weekly activities for any grading to be considered. Online Screenshot evidence and physical attendance for SWE will be used to verify student work.  \r\nFILL: Acknowledge compliance: \"All daily entries updated and weekly scans uploaded by deadlines.\" (Handwritten remark optional.)\r\n\r\nREPORT SUBMISSION  \r\nThe logbook and report must be submitted to the project course supervisor at the end of the Project. Attach the letter from the employment that granted you the Project vacancy indicating when the Project started and when it will end. The Log-Book should be well bound.  \r\nFILL: \"Letter of placement attached (if applicable). Final submission target: 27 Oct 2025.\"\r\n\r\n---",
+  "studentInfo": {
+  "studentName": "",
+  "registration": "",
+  "faculty": "School of Science & Technology",
+  "course": "BSc Software Engineering",
+  "stage": "Year 3 / Sem 2",
+  "supervisor": "",
+  "mobile": "",
+  "duration": "12 Weeks (05 Aug – 27 Oct 2025)",
+  "shortDescriptor": "Interactive mapping + group routing + task boards + lost & found + emergency routing",
+  "tagline": "Enhancing navigation, collaboration, safety"
+  },
+  "features": [
+    "Interactive Mapbox campus map + POI search",
+    "Walkway shortest-path routing (Dijkstra)",
+    "Group navigation (shared session, presence, synchronized routes)",
+    "Kanban task boards (assignments, progress states)",
+    "Lost & found reporting & claim workflow",
+    "Emergency hazard-aware routing (weighted risk)"
+  ],
+  "weeks": [
+    {
+      "title": "WEEK ONE: Project CONCEPTUALIZATION",
+      "week": "ONE",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "(If started later leave blank or ideation)",
+          "newSkills": "Project scoping & requirement consolidation"
+        },
+        {
+          "day": "Tue",
+          "description": "Initialize React+TypeScript project, integrate Mapbox token & map render",
+          "newSkills": "Mapbox GL initialization, environment config"
+        },
+        {
+          "day": "Wed",
+          "description": "Implement geolocation hook (watchPosition) & manual override",
+          "newSkills": "Browser geolocation API patterns, accuracy handling"
+        },
+        {
+          "day": "Thur",
+          "description": "Curate POI dataset; create search scoring utility",
+          "newSkills": "Data modeling, basic relevance scoring"
+        },
+        {
+          "day": "Fri",
+          "description": "Build walkway graph; implement Dijkstra shortest path",
+          "newSkills": "Graph representation & routing algorithm application"
+        },
+        {
+          "day": "Sat",
+          "description": "Refactor components (POISearch, RoutePanel), add error boundary",
+          "newSkills": "Component architecture & error isolation"
+        },
+        {
+          "day": "Sun",
+          "description": "Replace DOM markers with GeoJSON circle layer; add diagnostics script",
+          "newSkills": "Vector layer styling, runtime validation scripting"
+        }
+      ],
+      "summary": "",
+      "raw": "DAY | DESCRIPTION OF WEEKLY ACTIVITIES | NEW SKILLS LEARNT\r\nMon. | (If started later leave blank or ideation) | Project scoping & requirement consolidation\r\nTue. | Initialize React+TypeScript project, integrate Mapbox token & map render | Mapbox GL initialization, environment config\r\nWed. | Implement geolocation hook (watchPosition) & manual override | Browser geolocation API patterns, accuracy handling\r\nThur. | Curate POI dataset; create search scoring utility | Data modeling, basic relevance scoring\r\nFri. | Build walkway graph; implement Dijkstra shortest path | Graph representation & routing algorithm application\r\nSat. | Refactor components (POISearch, RoutePanel), add error boundary | Component architecture & error isolation\r\nSun. | Replace DOM markers with GeoJSON circle layer; add di"
+    },
+    {
+      "title": "WEEK TWO: Project PROPOSAL – Use your objectives",
+      "week": "TWO",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Formalize objectives & success metrics",
+          "newSkills": "Objectives traceability, metrics definition"
+        },
+        {
+          "day": "Tue",
+          "description": "Draft high-level architecture diagrams (modules, data flow)",
+          "newSkills": "UML component modeling"
+        },
+        {
+          "day": "Wed",
+          "description": "Define data models (Session, Task, LostItem, HazardEdge)",
+          "newSkills": "Schema design, model normalization"
+        },
+        {
+          "day": "Thur",
+          "description": "Prioritize backlog & implementation phases (roadmap)",
+          "newSkills": "Roadmapping & risk staging"
+        },
+        {
+          "day": "Fri",
+          "description": "Validation planning (unit & E2E test matrix)",
+          "newSkills": "Test strategy design"
+        }
+      ],
+      "summary": "FILL: \"Completed detailed proposal: architecture, data models, phased roadmap, testing and risk plan.\"",
+      "raw": "Main Objective:  \r\nFILL: \"Deliver an integrated campus platform combining navigation, collaboration, asset recovery, and emergency routing.\"\r\n\r\nClear system objectives [Ensure weekly activities match]:  \r\n∟ Provide interactive map & POI search (baseline)  \r\n∟ Shortest-path routing between user & POI  \r\n∟ Group session presence & synchronized routing  \r\n∟ Task boards with assignment & status flow  \r\n∟ Lost & found reporting & claims  \r\n∟ Emergency hazard-aware routing & risk weighting\r\n\r\nDAY | DESCRIPTION OF WEEKLY ACTIVITIES | NEW SKILLS LEARNT\r\nMon. | Formalize objectives & success metrics | Objectives traceability, metrics definition\r\nTue. | Draft high-level architecture diagrams (modules, data flow) | UML component modeling\r\nWed. | Define data models (Session, Task, LostItem, HazardEdge"
+    },
+    {
+      "title": "WEEK THREE: Project UML AND SYSTEM DESIGN",
+      "week": "THREE",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Detailed UML class diagrams for data models",
+          "newSkills": "Class decomposition"
+        },
+        {
+          "day": "Tue",
+          "description": "Sequence diagrams for group presence & hazard update flows",
+          "newSkills": "Event-driven modeling"
+        },
+        {
+          "day": "Wed",
+          "description": "State diagrams for Task and Lost/Found item lifecycle",
+          "newSkills": "Finite state thinking"
+        },
+        {
+          "day": "Thur",
+          "description": "Define API contracts & validation schemas (Zod stubs)",
+          "newSkills": "Contract-first design"
+        },
+        {
+          "day": "Fri",
+          "description": "Performance & accessibility design considerations documented",
+          "newSkills": "A11y planning, perf budgeting"
+        }
+      ],
+      "summary": "FILL: \"Produced comprehensive UML set (class, sequence, state) and validation blueprint supporting upcoming implementation.\"",
+      "raw": "DAY | DESCRIPTION | NEW SKILLS\r\nMon. | Detailed UML class diagrams for data models | Class decomposition\r\nTue. | Sequence diagrams for group presence & hazard update flows | Event-driven modeling\r\nWed. | State diagrams for Task and Lost/Found item lifecycle | Finite state thinking\r\nThur. | Define API contracts & validation schemas (Zod stubs) | Contract-first design\r\nFri. | Performance & accessibility design considerations documented | A11y planning, perf budgeting\r\n\r\nWeek 3 Summary:  \r\nFILL: \"Produced comprehensive UML set (class, sequence, state) and validation blueprint supporting upcoming implementation.\"  \r\nSupervisor Comments: ____________\r\n\r\n---"
+    },
+    {
+      "title": "WEEK FOUR: Project DESIGN / DATASET / DATABASE",
+      "week": "FOUR",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Augment graph design & hazard attribute taxonomy",
+          "newSkills": "Multi-criteria routing modeling"
+        },
+        {
+          "day": "Tue",
+          "description": "Firestore collection schema draft (tasks, sessions, items)",
+          "newSkills": "Cloud data structuring"
+        },
+        {
+          "day": "Wed",
+          "description": "Security rules outline (ACL, presence TTL)",
+          "newSkills": "Access control planning"
+        },
+        {
+          "day": "Thur",
+          "description": "Service worker offline asset & POI caching plan",
+          "newSkills": "PWA offline strategies"
+        },
+        {
+          "day": "Fri",
+          "description": "Route cache & performance estimation worksheet",
+          "newSkills": "Algorithmic optimization planning"
+        }
+      ],
+      "summary": "FILL: \"Finalized data expansion strategies and persistence/security design; prepared for feature implementation.\"",
+      "raw": "Describe briefly your design activities (bullets):\r\n∟ Extended walkway graph attribute plan (riskLevel, accessible)  \r\n∟ POI augmentation (retrievalPoint flags)  \r\n∟ Data persistence choice (Firestore vs WebSocket fallback)  \r\n∟ Draft Firestore collections & security rule outline  \r\n∟ Route caching strategy (memo keys + hazard version)  \r\n∟ Offline caching manifest plan\r\n\r\nDAY | DESCRIPTION | NEW SKILLS\r\nMon. | Augment graph design & hazard attribute taxonomy | Multi-criteria routing modeling\r\nTue. | Firestore collection schema draft (tasks, sessions, items) | Cloud data structuring\r\nWed. | Security rules outline (ACL, presence TTL) | Access control planning\r\nThur. | Service worker offline asset & POI caching plan | PWA offline strategies\r\nFri. | Route cache & performance estimation worksh"
+    },
+    {
+      "title": "WEEK FIVE: PROGRESS REPORTING #1",
+      "week": "FIVE",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Implement LostItem + FoundItem forms (client mock)",
+          "newSkills": "Form design, validation"
+        },
+        {
+          "day": "Tue",
+          "description": "Local image attachment handling & preview",
+          "newSkills": "File handling"
+        },
+        {
+          "day": "Wed",
+          "description": "Listing & filter UI (category, POI filter)",
+          "newSkills": "UI state management"
+        },
+        {
+          "day": "Thur",
+          "description": "Claim initiation flow mock",
+          "newSkills": "Workflow modeling"
+        },
+        {
+          "day": "Fri",
+          "description": "Status transitions & resolution logic (client-side)",
+          "newSkills": "State machine application"
+        }
+      ],
+      "summary": "FILL: \"Lost & Found UI prototype functional end-to-end (mock layer) enabling future backend wiring.\"",
+      "raw": "Focus: Lost & Found Module MVP\r\nDAY | DESCRIPTION | NEW SKILLS\r\nMon. | Implement LostItem + FoundItem forms (client mock) | Form design, validation\r\nTue. | Local image attachment handling & preview | File handling\r\nWed. | Listing & filter UI (category, POI filter) | UI state management\r\nThur. | Claim initiation flow mock | Workflow modeling\r\nFri. | Status transitions & resolution logic (client-side) | State machine application\r\n\r\nWeek 5 Summary:  \r\nFILL: \"Lost & Found UI prototype functional end-to-end (mock layer) enabling future backend wiring.\"  \r\nSupervisor Comments: ____________\r\n\r\n---"
+    },
+    {
+      "title": "WEEK SIX: PROGRESS REPORTING #2",
+      "week": "SIX",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Session create/join UI & code generation",
+          "newSkills": "Collaboration UX"
+        },
+        {
+          "day": "Tue",
+          "description": "Presence broadcast mock (interval updates)",
+          "newSkills": "Realtime simulation"
+        },
+        {
+          "day": "Wed",
+          "description": "Per-member shortest path computation & polyline overlay",
+          "newSkills": "Multi-route optimization"
+        },
+        {
+          "day": "Thur",
+          "description": "Shared target & dynamic re-route logic",
+          "newSkills": "Event-driven recompute"
+        },
+        {
+          "day": "Fri",
+          "description": "Overlapping segment highlight algorithm",
+          "newSkills": "Graph edge intersection"
+        }
+      ],
+      "summary": "FILL: \"Group session & presence simulation working; synchronized route visualization complete.\"",
+      "raw": "Focus: Group Navigation Presence\r\nDAY | DESCRIPTION | NEW SKILLS\r\nMon. | Session create/join UI & code generation | Collaboration UX\r\nTue. | Presence broadcast mock (interval updates) | Realtime simulation\r\nWed. | Per-member shortest path computation & polyline overlay | Multi-route optimization\r\nThur. | Shared target & dynamic re-route logic | Event-driven recompute\r\nFri. | Overlapping segment highlight algorithm | Graph edge intersection\r\n\r\nWeek 6 Summary:  \r\nFILL: \"Group session & presence simulation working; synchronized route visualization complete.\"  \r\nSupervisor Comments: ____________\r\n\r\n---"
+    },
+    {
+      "title": "WEEK SEVEN: PROGRESS REPORTING #3",
+      "week": "SEVEN",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Board & column CRUD UI",
+          "newSkills": "CRUD architecture"
+        },
+        {
+          "day": "Tue",
+          "description": "Task creation & assignment feature",
+          "newSkills": "Ownership modeling"
+        },
+        {
+          "day": "Wed",
+          "description": "Drag & drop ordering with fractional indices",
+          "newSkills": "Ordering algorithms"
+        },
+        {
+          "day": "Thur",
+          "description": "Activity log integration",
+          "newSkills": "Audit logging"
+        },
+        {
+          "day": "Fri",
+          "description": "Basic filtering & tag chips",
+          "newSkills": "UI filtering patterns"
+        }
+      ],
+      "summary": "FILL: \"Kanban board with real-time state management and activity logging completed.\"",
+      "raw": "Focus: Task Boards (Kanban)\r\nDAY | DESCRIPTION | NEW SKILLS\r\nMon. | Board & column CRUD UI | CRUD architecture\r\nTue. | Task creation & assignment feature | Ownership modeling\r\nWed. | Drag & drop ordering with fractional indices | Ordering algorithms\r\nThur. | Activity log integration | Audit logging\r\nFri. | Basic filtering & tag chips | UI filtering patterns\r\n\r\nWeek 7 Summary:  \r\nFILL: \"Kanban board with real-time state management and activity logging completed.\"  \r\nSupervisor Comments: ____________\r\n\r\n---"
+    },
+    {
+      "title": "WEEK EIGHT: PROGRESS REPORTING #4",
+      "week": "EIGHT",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "HazardEdge ingestion model & subscription mock",
+          "newSkills": "Dynamic data ingestion"
+        },
+        {
+          "day": "Tue",
+          "description": "Weighted Dijkstra (risk + accessibility penalties)",
+          "newSkills": "Multi-criteria pathfinding"
+        },
+        {
+          "day": "Wed",
+          "description": "Fallback route detection (all safe blocked)",
+          "newSkills": "Graceful degradation"
+        },
+        {
+          "day": "Thur",
+          "description": "Route color coding (risk visualization)",
+          "newSkills": "Data-driven styling"
+        },
+        {
+          "day": "Fri",
+          "description": "Performance profiling & optimization",
+          "newSkills": "Profiling methodology"
+        }
+      ],
+      "summary": "FILL: \"Weighted routing & hazard visualization operational; fallback warnings implemented.\"",
+      "raw": "Focus: Emergency Routing Engine\r\nDAY | DESCRIPTION | NEW SKILLS\r\nMon. | HazardEdge ingestion model & subscription mock | Dynamic data ingestion\r\nTue. | Weighted Dijkstra (risk + accessibility penalties) | Multi-criteria pathfinding\r\nWed. | Fallback route detection (all safe blocked) | Graceful degradation\r\nThur. | Route color coding (risk visualization) | Data-driven styling\r\nFri. | Performance profiling & optimization | Profiling methodology\r\n\r\nWeek 8 Summary:  \r\nFILL: \"Weighted routing & hazard visualization operational; fallback warnings implemented.\"  \r\nSupervisor Comments: ____________\r\n\r\n---"
+    },
+    {
+      "title": "WEEK NINE: PROGRESS REPORTING #5",
+      "week": "NINE",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Keyboard navigation and focus management",
+          "newSkills": "A11y interaction patterns"
+        },
+        {
+          "day": "Tue",
+          "description": "ARIA roles & semantic labeling",
+          "newSkills": "Inclusive design"
+        },
+        {
+          "day": "Wed",
+          "description": "High-contrast & reduced-motion modes",
+          "newSkills": "Theming/accessibility settings"
+        },
+        {
+          "day": "Thur",
+          "description": "Service worker asset + POI caching implementation",
+          "newSkills": "Offline caching"
+        },
+        {
+          "day": "Fri",
+          "description": "Offline mutation queue framework",
+          "newSkills": "Sync resilience"
+        }
+      ],
+      "summary": "FILL: \"Accessibility baseline achieved and offline caching with queued mutations implemented.\"",
+      "raw": "Focus: Accessibility & Offline\r\nDAY | DESCRIPTION | NEW SKILLS\r\nMon. | Keyboard navigation and focus management | A11y interaction patterns\r\nTue. | ARIA roles & semantic labeling | Inclusive design\r\nWed. | High-contrast & reduced-motion modes | Theming/accessibility settings\r\nThur. | Service worker asset + POI caching implementation | Offline caching\r\nFri. | Offline mutation queue framework | Sync resilience\r\n\r\nWeek 9 Summary:  \r\nFILL: \"Accessibility baseline achieved and offline caching with queued mutations implemented.\"  \r\nSupervisor Comments: ____________\r\n\r\n---"
+    },
+    {
+      "title": "WEEK TEN: PROGRESS REPORTING #6",
+      "week": "TEN",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Unit tests for routing & search",
+          "newSkills": "Algorithm test design"
+        },
+        {
+          "day": "Tue",
+          "description": "Component tests (POISearch, RoutePanel)",
+          "newSkills": "React Testing Library usage"
+        },
+        {
+          "day": "Wed",
+          "description": "Integration tests (session + presence)",
+          "newSkills": "Cross-module validation"
+        },
+        {
+          "day": "Thur",
+          "description": "Cypress E2E baseline suite",
+          "newSkills": "E2E automation"
+        },
+        {
+          "day": "Fri",
+          "description": "CI pipeline (lint, test, build) setup",
+          "newSkills": "Continuous integration"
+        }
+      ],
+      "summary": "FILL: \"Comprehensive automated test suite and CI pipeline established.\"",
+      "raw": "Focus: Testing & Quality\r\nDAY | DESCRIPTION | NEW SKILLS\r\nMon. | Unit tests for routing & search | Algorithm test design\r\nTue. | Component tests (POISearch, RoutePanel) | React Testing Library usage\r\nWed. | Integration tests (session + presence) | Cross-module validation\r\nThur. | Cypress E2E baseline suite | E2E automation\r\nFri. | CI pipeline (lint, test, build) setup | Continuous integration\r\n\r\nWeek 10 Summary:  \r\nFILL: \"Comprehensive automated test suite and CI pipeline established.\"  \r\nSupervisor Comments: ____________\r\n\r\n---"
+    },
+    {
+      "title": "WEEK ELEVEN: PROGRESS REPORTING #7 – REPORT PREPARATION & DOCUMENTATION",
+      "week": "ELEVEN",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Draft Abstract & Introduction",
+          "newSkills": "Technical writing"
+        },
+        {
+          "day": "Tue",
+          "description": "Draft Design & Implementation chapters",
+          "newSkills": "Documentation structure"
+        },
+        {
+          "day": "Wed",
+          "description": "Draft Testing & Results sections",
+          "newSkills": "Evidence synthesis"
+        },
+        {
+          "day": "Thur",
+          "description": "Draft Future Work & Conclusion",
+          "newSkills": "Strategic articulation"
+        },
+        {
+          "day": "Fri",
+          "description": "Proofread, diagram polish, bibliography",
+          "newSkills": "Editing & refinement"
+        }
+      ],
+      "summary": "FILL: \"Draft report near-final; all sections populated pending supervisor feedback.\"",
+      "raw": "DAY | DESCRIPTION | NEW SKILLS\r\nMon. | Draft Abstract & Introduction | Technical writing\r\nTue. | Draft Design & Implementation chapters | Documentation structure\r\nWed. | Draft Testing & Results sections | Evidence synthesis\r\nThur. | Draft Future Work & Conclusion | Strategic articulation\r\nFri. | Proofread, diagram polish, bibliography | Editing & refinement\r\n\r\nWeek 11 Summary:  \r\nFILL: \"Draft report near-final; all sections populated pending supervisor feedback.\"  \r\nSupervisor Comments: ____________\r\n\r\n---"
+    },
+    {
+      "title": "WEEK TWELVE: PROGRESS REPORTING #8 – FINAL PROJECT FINALIZATION",
+      "week": "TWELVE",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Final integration & regression pass",
+          "newSkills": "Release readiness"
+        },
+        {
+          "day": "Tue",
+          "description": "Address supervisor feedback",
+          "newSkills": "Iterative improvement"
+        },
+        {
+          "day": "Wed",
+          "description": "Prepare presentation/demo assets",
+          "newSkills": "Communication refinement"
+        },
+        {
+          "day": "Thur",
+          "description": "Final report + logbook compilation",
+          "newSkills": "Packaging & compliance"
+        },
+        {
+          "day": "Fri",
+          "description": "Submission & retrospective notes",
+          "newSkills": "Post-mortem analysis"
+        }
+      ],
+      "summary": "FILL: \"All deliverables finalized, submitted, and retrospective documented for knowledge capture.\"",
+      "raw": "DAY | DESCRIPTION | NEW SKILLS\r\nMon. | Final integration & regression pass | Release readiness\r\nTue. | Address supervisor feedback | Iterative improvement\r\nWed. | Prepare presentation/demo assets | Communication refinement\r\nThur. | Final report + logbook compilation | Packaging & compliance\r\nFri. | Submission & retrospective notes | Post-mortem analysis\r\n\r\nWeek 12 Summary:  \r\nFILL: \"All deliverables finalized, submitted, and retrospective documented for knowledge capture.\"  \r\nSupervisor Comments: ____________\r\n\r\n---"
+    }
+  ]
+}

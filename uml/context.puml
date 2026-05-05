@@ -1,0 +1,37 @@
+@startuml context
+title CampusNav – Context (Moderate)
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 13
+skinparam titleFontSize 16
+skinparam noteFontSize 12
+skinparam arrowColor #555555
+skinparam legendBackgroundColor #F4F6F8
+skinparam legendBorderColor #B8C2CC
+
+actor User
+
+rectangle "CampusNav" as App {
+  [Map UI]
+  [Search & Route Panel]
+}
+
+cloud "Mapbox Platform" as Mapbox
+node "Browser Geolocation API" as Geo
+
+User --> App
+App --> Mapbox : map tiles, styles
+App --> Geo : location watch
+
+note bottom of App
+Client-only React SPA:
+Local routing + search.
+External only: Map tiles, geolocation.
+end note
+
+legend right
+User->App: interact
+App->Mapbox: tiles/styles
+App->Geo: position
+end legend
+
+@enduml

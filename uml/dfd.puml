@@ -1,0 +1,36 @@
+@startuml dfd
+title CampusNav — Data Flow Diagram 
+' Improve readability
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 20
+skinparam titleFontSize 20
+skinparam actorFontSize 18
+skinparam noteFontSize 18
+skinparam defaultFontColor #111111
+skinparam arrowColor #222222
+skinparam shadowing false
+
+left to right direction
+
+actor User
+rectangle "CampusNav (Client)" as App
+cloud "Mapbox" as Mapbox
+database "POI Store (local/cache)" as POI
+database "Session Store (optional) (Firestore)" as Session
+database "Task Store (local/cache)" as Tasks
+
+User --> App : interact (search, start route, submit lost item)
+App --> POI : read POIs, write annotations
+App --> Mapbox : tiles, geocoding
+App --> Session : publish presence / subscribe
+App --> Tasks : CRUD tasks
+
+App -> App : Compute route (Dijkstra + hazards)
+App -> App : Hazard evaluation (local filter)
+
+note right of App
+Core processes: Search, Route Compute,
+Hazard Eval, Lost&Found, Task Boards
+end note
+
+@enduml

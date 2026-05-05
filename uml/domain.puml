@@ -1,0 +1,64 @@
+@startuml domain
+title CampusNav – Domain (Moderate)
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 13
+skinparam titleFontSize 16
+skinparam noteFontSize 12
+skinparam classFontSize 13
+skinparam arrowColor #555555
+skinparam legendBackgroundColor #F4F6F8
+skinparam legendBorderColor #B8C2CC
+
+class CampusPOI {
+  +id: string
+  +name: string
+  +category: Category
+  +coords: lngLat
+  +tags: string[]
+}
+
+class RouteStep {
+  +from: lngLat
+  +to: lngLat
+  +distanceMeters: number
+  +direction: string
+}
+
+class PathNetwork {
+  -nodes
+  -edges
+  +computeRoute(start, end, opts): RouteResult
+  +getSegments(): Segment[]
+}
+
+class RouteResult {
+  +path: lngLat[]
+  +distanceMeters: number
+  +durationSec: number
+  +steps: RouteStep[]
+}
+
+"""
+PlantUML: declare Category as an enum (PlantUML doesn't support a bare 'type' keyword)
+and expand lngLat into a proper class so the parser doesn't misinterpret a bare
+identifier on its own line.
+"""
+enum Category
+
+class lngLat {
+  +lng: number
+  +lat: number
+}
+
+CampusPOI "*" --> "1" PathNetwork : nearest
+PathNetwork --> RouteResult
+RouteResult "*" --> RouteStep
+
+note top of PathNetwork : Dijkstra + filters (stairs, hazards)
+end note
+
+legend bottom
+POI data | PathNetwork routing | Result metrics+steps
+end legend
+
+@enduml

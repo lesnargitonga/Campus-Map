@@ -1,0 +1,63 @@
+@startuml component
+' Simplified (Moderate) Component Diagram
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 13
+skinparam titleFontSize 16
+skinparam noteFontSize 12
+skinparam componentFontSize 13
+skinparam arrowColor #555555
+skinparam legendBackgroundColor #F4F6F8
+skinparam legendBorderColor #B8C2CC
+skinparam shadowing false
+skinparam componentStyle rectangle
+skinparam wrapWidth 160
+title CampusNav – Core Components (Moderate View)
+
+package UI {
+  [App]
+  [POISearch]
+  [RoutePanel]
+  [Toolbar]
+}
+
+package Hooks {
+  [useMapbox]
+  [useUserLocation]
+}
+
+package Utils {
+  [pathNetwork]
+  [search]
+}
+
+cloud Mapbox
+rectangle Geolocation
+
+[App] --> [POISearch]
+[App] --> [RoutePanel]
+[App] --> [Toolbar]
+[App] --> [useMapbox]
+[App] --> [useUserLocation]
+[POISearch] --> [search]
+[App] --> [pathNetwork] : route
+[useUserLocation] ..> Geolocation
+[useMapbox] ..> Mapbox
+
+note right of App
+State + orchestration:
+POI selection, routing,
+accessibility & hazards.
+end note
+
+note bottom of pathNetwork
+Shortest-path logic (Dijkstra)
+with stairs + hazard filtering.
+end note
+
+legend bottom
+Solid arrow: internal dependency
+Dashed arrow: external platform
+Scope: Only active MVP code
+Excluded: removed scripts/backends
+end legend
+@enduml

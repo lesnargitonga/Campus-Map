@@ -1,0 +1,27 @@
+@startuml sequence_route
+title Route Sequence (Moderate)
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 13
+skinparam titleFontSize 16
+skinparam noteFontSize 12
+skinparam arrowColor #555555
+skinparam legendBackgroundColor #F4F6F8
+skinparam legendBorderColor #B8C2CC
+
+actor User
+participant App
+participant useMapbox
+participant pathNetwork
+
+User -> App : select Start POI
+User -> App : select End POI
+App -> pathNetwork : computeCampusRoute(start,end, opts)
+pathNetwork --> App : RouteResult
+App -> useMapbox : drawRoute(path)
+useMapbox --> App : (rendered)
+App -> User : show distance + ETA
+
+note over App,pathNetwork Client-side route with constraints end note
+legend bottom 1 Start 2 End 3 Compute 4 Draw 5 Show ETA end legend
+
+@enduml

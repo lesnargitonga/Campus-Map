@@ -1,0 +1,449 @@
+{
+  "generatedAt": "2025-08-15T17:47:42.945Z",
+  "weeks": [
+    {
+      "title": "WEEK ONE: Project CONCEPTUALIZATION",
+      "week": "ONE",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "(If started later leave blank or ideation)",
+          "newSkills": "Project scoping & requirement consolidation",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "Initialize React+TypeScript project, integrate Mapbox token & map render",
+          "newSkills": "Mapbox GL initialization, environment config",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "Implement geolocation hook (watchPosition) & manual override",
+          "newSkills": "Browser geolocation API patterns, accuracy handling",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Curate POI dataset; create search scoring utility",
+          "newSkills": "Data modeling, basic relevance scoring",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "Build walkway graph; implement Dijkstra shortest path",
+          "newSkills": "Graph representation & routing algorithm application",
+          "status": "pending"
+        },
+        {
+          "day": "Sat",
+          "description": "Refactor components (POISearch, RoutePanel), add error boundary",
+          "newSkills": "Component architecture & error isolation",
+          "status": "pending"
+        },
+        {
+          "day": "Sun",
+          "description": "Replace DOM markers with GeoJSON circle layer; add diagnostics script",
+          "newSkills": "Vector layer styling, runtime validation scripting",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "title": "WEEK TWO: Project PROPOSAL – Use your objectives",
+      "week": "TWO",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Formalize objectives & success metrics",
+          "newSkills": "Objectives traceability, metrics definition",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "Draft high-level architecture diagrams (modules, data flow)",
+          "newSkills": "UML component modeling",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "Define data models (Session, Task, LostItem, HazardEdge)",
+          "newSkills": "Schema design, model normalization",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Prioritize backlog & implementation phases (roadmap)",
+          "newSkills": "Roadmapping & risk staging",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "Validation planning (unit & E2E test matrix)",
+          "newSkills": "Test strategy design",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "title": "WEEK THREE: Project UML AND SYSTEM DESIGN",
+      "week": "THREE",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Detailed UML class diagrams for data models",
+          "newSkills": "Class decomposition",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "Sequence diagrams for group presence & hazard update flows",
+          "newSkills": "Event-driven modeling",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "State diagrams for Task and Lost/Found item lifecycle",
+          "newSkills": "Finite state thinking",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Define API contracts & validation schemas (Zod stubs)",
+          "newSkills": "Contract-first design",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "Performance & accessibility design considerations documented",
+          "newSkills": "A11y planning, perf budgeting",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "title": "WEEK FOUR: Project DESIGN / DATASET / DATABASE",
+      "week": "FOUR",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Augment graph design & hazard attribute taxonomy",
+          "newSkills": "Multi-criteria routing modeling",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "Firestore collection schema draft (tasks, sessions, items)",
+          "newSkills": "Cloud data structuring",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "Security rules outline (ACL, presence TTL)",
+          "newSkills": "Access control planning",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Service worker offline asset & POI caching plan",
+          "newSkills": "PWA offline strategies",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "Route cache & performance estimation worksheet",
+          "newSkills": "Algorithmic optimization planning",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "title": "WEEK FIVE: PROGRESS REPORTING #1",
+      "week": "FIVE",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Implement LostItem + FoundItem forms (client mock)",
+          "newSkills": "Form design, validation",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "Local image attachment handling & preview",
+          "newSkills": "File handling",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "Listing & filter UI (category, POI filter)",
+          "newSkills": "UI state management",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Claim initiation flow mock",
+          "newSkills": "Workflow modeling",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "Status transitions & resolution logic (client-side)",
+          "newSkills": "State machine application",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "title": "WEEK SIX: PROGRESS REPORTING #2",
+      "week": "SIX",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Session create/join UI & code generation",
+          "newSkills": "Collaboration UX",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "Presence broadcast mock (interval updates)",
+          "newSkills": "Realtime simulation",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "Per-member shortest path computation & polyline overlay",
+          "newSkills": "Multi-route optimization",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Shared target & dynamic re-route logic",
+          "newSkills": "Event-driven recompute",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "Overlapping segment highlight algorithm",
+          "newSkills": "Graph edge intersection",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "title": "WEEK SEVEN: PROGRESS REPORTING #3",
+      "week": "SEVEN",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Board & column CRUD UI",
+          "newSkills": "CRUD architecture",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "Task creation & assignment feature",
+          "newSkills": "Ownership modeling",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "Drag & drop ordering with fractional indices",
+          "newSkills": "Ordering algorithms",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Activity log integration",
+          "newSkills": "Audit logging",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "Basic filtering & tag chips",
+          "newSkills": "UI filtering patterns",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "title": "WEEK EIGHT: PROGRESS REPORTING #4",
+      "week": "EIGHT",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "HazardEdge ingestion model & subscription mock",
+          "newSkills": "Dynamic data ingestion",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "Weighted Dijkstra (risk + accessibility penalties)",
+          "newSkills": "Multi-criteria pathfinding",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "Fallback route detection (all safe blocked)",
+          "newSkills": "Graceful degradation",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Route color coding (risk visualization)",
+          "newSkills": "Data-driven styling",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "Performance profiling & optimization",
+          "newSkills": "Profiling methodology",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "title": "WEEK NINE: PROGRESS REPORTING #5",
+      "week": "NINE",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Keyboard navigation and focus management",
+          "newSkills": "A11y interaction patterns",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "ARIA roles & semantic labeling",
+          "newSkills": "Inclusive design",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "High-contrast & reduced-motion modes",
+          "newSkills": "Theming/accessibility settings",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Service worker asset + POI caching implementation",
+          "newSkills": "Offline caching",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "Offline mutation queue framework",
+          "newSkills": "Sync resilience",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "title": "WEEK TEN: PROGRESS REPORTING #6",
+      "week": "TEN",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Unit tests for routing & search",
+          "newSkills": "Algorithm test design",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "Component tests (POISearch, RoutePanel)",
+          "newSkills": "React Testing Library usage",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "Integration tests (session + presence)",
+          "newSkills": "Cross-module validation",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Cypress E2E baseline suite",
+          "newSkills": "E2E automation",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "CI pipeline (lint, test, build) setup",
+          "newSkills": "Continuous integration",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "title": "WEEK ELEVEN: PROGRESS REPORTING #7 – REPORT PREPARATION & DOCUMENTATION",
+      "week": "ELEVEN",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Draft Abstract & Introduction",
+          "newSkills": "Technical writing",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "Draft Design & Implementation chapters",
+          "newSkills": "Documentation structure",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "Draft Testing & Results sections",
+          "newSkills": "Evidence synthesis",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Draft Future Work & Conclusion",
+          "newSkills": "Strategic articulation",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "Proofread, diagram polish, bibliography",
+          "newSkills": "Editing & refinement",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "title": "WEEK TWELVE: PROGRESS REPORTING #8 – FINAL PROJECT FINALIZATION",
+      "week": "TWELVE",
+      "days": [
+        {
+          "day": "Mon",
+          "description": "Final integration & regression pass",
+          "newSkills": "Release readiness",
+          "status": "pending"
+        },
+        {
+          "day": "Tue",
+          "description": "Address supervisor feedback",
+          "newSkills": "Iterative improvement",
+          "status": "pending"
+        },
+        {
+          "day": "Wed",
+          "description": "Prepare presentation/demo assets",
+          "newSkills": "Communication refinement",
+          "status": "pending"
+        },
+        {
+          "day": "Thur",
+          "description": "Final report + logbook compilation",
+          "newSkills": "Packaging & compliance",
+          "status": "pending"
+        },
+        {
+          "day": "Fri",
+          "description": "Submission & retrospective notes",
+          "newSkills": "Post-mortem analysis",
+          "status": "pending"
+        }
+      ]
+    }
+  ]
+}

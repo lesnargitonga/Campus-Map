@@ -1,0 +1,26 @@
+@startuml deployment
+title Deployment (Moderate)
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 13
+skinparam titleFontSize 16
+skinparam noteFontSize 12
+skinparam arrowColor #555555
+skinparam legendBackgroundColor #F4F6F8
+skinparam legendBorderColor #B8C2CC
+
+node "User Browser" {
+  component "React SPA" as SPA
+}
+
+cloud "Mapbox CDN" as CDN
+node "Browser APIs" as APIs {
+  [Geolocation]
+}
+
+SPA --> CDN : tiles, styles
+SPA --> APIs : watchPosition()
+
+note right of SPA Static bundle; all logic local end note
+legend bottom Browser: run | CDN: tiles/styles | Geo: location end legend
+
+@enduml

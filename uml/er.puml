@@ -1,0 +1,42 @@
+@startuml er
+!define Table(name,desc) entity name as "desc"
+
+title CampusNav — ER Diagram 
+
+Table(CampusPOI, "CampusPOI") {
+  * id : string
+  --
+  name : string
+  category : string
+  coords : lngLat
+}
+
+Table(PathNetwork, "PathNetwork") {
+  * id : string
+  --
+  nodes
+  edges
+}
+
+Table(RouteResult, "RouteResult") {
+  * id : string
+  --
+  distanceMeters : number
+  durationSec : number
+}
+
+Table(Session, "Session") {
+  * id : string
+  --
+  members
+  createdAt
+}
+
+CampusPOI }o--|| PathNetwork : nearest
+PathNetwork ||--o{ RouteResult : produces
+Session ||--o{ RouteResult : initiates
+
+note bottom
+This ER diagram highlights core entities and their relationships.
+end note
+@enduml

@@ -1,0 +1,36 @@
+@startuml usecases
+title CampusNav – Use Cases (Moderate)
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 13
+skinparam titleFontSize 16
+skinparam noteFontSize 12
+skinparam arrowColor #555555
+skinparam legendBackgroundColor #F4F6F8
+skinparam legendBorderColor #B8C2CC
+left to right direction
+
+actor User
+
+rectangle CampusNav {
+  usecase UC_Search as "Search POIs"
+  usecase UC_Route as "Compute Route"
+  usecase UC_Access as "Accessible Mode"
+  usecase UC_Hazard as "Mark Hazard"
+  usecase UC_Locate as "Locate Me"
+}
+
+User --> UC_Search
+User --> UC_Route
+User --> UC_Access
+User --> UC_Hazard
+User --> UC_Locate
+UC_Access <-- UC_Route : modifies weighting
+UC_Hazard <-- UC_Route : avoids blocked
+
+note right of UC_Access Excludes stairs from routing end note
+note right of UC_Hazard Blocks walkway edge end note
+
+legend bottom
+Search: filter/rank | Route: shortest path | Accessible: avoid stairs | Hazard: block edge | Locate: center map
+end legend
+@enduml

@@ -1,0 +1,49 @@
+{
+  "name": "campus-map",
+  "version": "1.0.0",
+  "description": "Campus Map Navigator",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "campus",
+    "map",
+    "navigator",
+    "react",
+    "firebase",
+    "mapbox"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^12.1.0",
+    "mapbox-gl": "^2.15.0",
+    "puppeteer": "^24.16.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^2.7.21",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "pdf-parse": "^1.1.1",
+    "typescript": "4.9.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
