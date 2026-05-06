@@ -2,6 +2,12 @@
 
 Campus Map is a React and TypeScript campus navigation application built around Mapbox GL and Firebase. It combines interactive mapping with campus-oriented workflows such as point-of-interest lookup, route guidance, group coordination, lost-and-found reporting, and hazard-aware emergency routing.
 
+## Showcase Focus
+
+- Geospatial product design with Mapbox GL.
+- Collaborative campus workflows backed by Firestore.
+- Frontend state coordination across search, routing, hazards, and group sessions.
+
 ## System Capabilities
 
 - Interactive campus map with switchable map styles.
